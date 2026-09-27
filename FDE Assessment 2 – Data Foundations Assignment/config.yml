@@ -1,0 +1,109 @@
+# Late Pickup Radar configuration. No magic numbers in code: every threshold lives here
+# or in pipeline/validation_rules.yml, and each one is justified in docs/assumptions.md.
+# Values marked PLACEHOLDER are PRD starting points to be tuned against the real profile.
+
+paths:
+  raw_dir: data/raw
+  warehouse_dir: data/warehouse
+  outputs_dir: outputs
+  logs_dir: logs
+  # Outputs are written here first and swapped into outputs/<name>/ only when every stage
+  # succeeded; a failed run leaves outputs/<name>/ untouched and writes its manifest to
+  # outputs/<name>/failed/run_manifest_<timestamp>.json.
+  staging_dir: outputs/.staging
+
+# Same resource envelope on every machine: a run that fits here fits on a small laptop.
+# DuckDB spills to temp_directory beyond memory_limit instead of failing.
+duckdb:
+  memory_limit: 4GB
+  threads: 2
+  temp_directory: data/warehouse/tmp
+
+# Offline sources (--offline, and implied by --sample-file): make demo, tests and CI read all four
+# sources from data/sample/, each checksum-verified against its .manifest.json. No network at all.
+# Built by `make sample` (pipeline/sample.py) from the real month; see data/sample/README.md.
+sample:
+  month: 2026-07
+  trips_file: data/sample/hvfhv_sample.parquet
+  zones_file: data/sample/zones.csv
+  weather_file: data/sample/weather_sample.json
+  expected_counts_file: data/sample/data_reports_monthly.csv
+  modulus: 400                     # md5(business key) % 400 = 0: ~1/400 of the month (~52k rows)
+  append_per_rule: 5               # real rows appended for a rule the hash sample happens to miss
+
+sources:
+  # Verified in phase 1 (2026-09-24): see docs/source_map.md for status codes and headers.
+  # PIPELINE_TRIPS_URL in the environment overrides trips_url_template (used by make demo-fail).
+  trips_url_template: https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_{month}.parquet
+  zones_url: https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv
+  weather_url: https://archive-api.open-meteo.com/v1/archive
+  expected_counts_url: https://www.nyc.gov/assets/tlc/downloads/csv/data_reports_monthly.csv
+  expected_counts_license_class: FHV - High Volume
+  data_dictionary_url: https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_hvfhs.pdf
+  # Observed 2026-07 schema (source_map.md S1). A missing column fails ingest (exit 2: schema
+  # drift is a source problem); an extra column is a WARN (TLC adds fee columns over time).
+  trips_expected_columns: [hvfhs_license_num, dispatching_base_num, originating_base_num,
+    request_datetime, on_scene_datetime, pickup_datetime, dropoff_datetime, PULocationID,
+    DOLocationID, trip_miles, trip_time, base_passenger_fare, tolls, bcf, sales_tax,
+    congestion_surcharge, airport_fee, tips, driver_pay, shared_request_flag, shared_match_flag,
+    access_a_ride_flag, wav_request_flag, wav_match_flag, cbd_congestion_fee]
+
+reference:
+  # License -> company, from the HVFHV data dictionary dated 2025-03-18 (source_map S4).
+  companies_source: data_dictionary_2025-03-18
+  companies:
+    HV0002: Juno
+    HV0003: Uber
+    HV0004: Via
+    HV0005: Lyft
+
+weather:
+  # Central Park; its reanalysis grid cell lies over New Jersey (assumptions.md F5).
+  latitude: 40.7829
+  longitude: -73.9654
+  request_timezone: GMT            # API local output is not DST-aware (assumptions.md F4)
+  local_timezone: America/New_York
+  hourly: [precipitation, temperature_2m, weather_code]
+
+completeness:
+  zone_count: 265
+  low_hour_share: 0.05             # WARN if an hour has < 5% of the median hour's rows
+  aggregate_band: 0.01             # WARN if |parquet rows - aggregate| / aggregate > 1%
+
+kpi:
+  late_minutes: 10                 # = observed p90 (10.02 min, 2026-07); fixed across months, see assumptions.md
+  sensitivity_minutes: [8, 15]
+  # R14 (whole-minute requests) is promoted to a wait-metric exclusion only if its late rate is
+  # more than this multiple of the rest (agreed in review; assumptions.md F18).
+  r14_promotion_ratio: 2.0
+
+thresholds:
+  # is_rainy: precipitation in the request hour >= this (mm). 2026-07: 98 of 744 hours; the
+  # 0.1-0.4 mm hours are drizzle-level model noise (assumptions.md F20).
+  rain_mm_per_hour: 0.5
+  rain_sensitivity_mm_per_hour: 2.5  # "moderate rain" line for M4 robustness
+  trust_floor: 0.95                # M5 hard-fail floor (PRD 7); 2026-07 observed 99.998%
+
+incentives:
+  # Decision grain: pickup zone x day-of-week x hour-of-day, on the REQUEST timestamp (the
+  # rider's ask is when supply is needed). Ranked by excess late trips =
+  # (cell late rate - citywide late rate) x n, only for cells with n >= min_cell_trips.
+  min_cell_trips: 200              # justified in assumptions.md (binomial error at n = 200)
+  # Airports are ranked as a separate list: their lever is staging-lot throughput and Port
+  # Authority dispatch (a different owner), not driver incentives. Partition is on zone type
+  # from the zone lookup's service_zone (Airports = 132 JFK, 138 LGA; EWR = 1 Newark), never on
+  # the numbers. assumptions.md F25.
+  airport_service_zones: [Airports, EWR]
+  top_n: 10                        # neighbourhood list (the incentive decision)
+  airport_top_n: 5                 # airport list (escalate to airport ops)
+  console_top_n: 10
+
+download:
+  # nyc.gov answers 403 to non-browser User-Agents (python-requests, curl, and a
+  # "compatible; bot" style UA all got 403 on 2026-09-25); this browser-style UA with the
+  # project name appended gets 200. CloudFront accepts any UA. See source_map.md S5.
+  user_agent: Mozilla/5.0 (X11; Linux x86_64) late-pickup-radar/0.1
+  attempts: 3
+  backoff_seconds: 2
+  timeout_seconds: 60
+  chunk_bytes: 1048576

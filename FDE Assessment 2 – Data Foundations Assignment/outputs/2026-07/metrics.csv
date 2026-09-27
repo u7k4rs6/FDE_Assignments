@@ -1,0 +1,203 @@
+metric,grain,dimensions,value,n,note
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=00,0.145027,87756,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=01,0.113075,58740,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=02,0.134752,42055,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=03,0.193334,36574,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=04,0.220151,40772,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=05,0.141684,60882,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=06,0.143577,99410,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=07,0.145800,147449,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=08,0.139421,172678,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=09,0.078947,145730,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=10,0.067601,127394,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=11,0.077858,124137,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=12,0.101326,126434,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=13,0.124241,132050,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=14,0.132071,144490,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=15,0.117858,147941,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=16,0.122465,154436,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=17,0.125739,155369,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=18,0.088626,143773,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=19,0.106964,134793,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=20,0.139358,124464,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=21,0.155535,125181,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=22,0.181643,125653,
+M1_late_rate_10,borough x hour_of_day,borough=Bronx|hour=23,0.189462,117860,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=00,0.122056,204579,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=01,0.093136,143081,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=02,0.136403,105254,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=03,0.189780,86811,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=04,0.227290,82432,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=05,0.139618,99414,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=06,0.125399,147250,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=07,0.136375,213815,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=08,0.142341,270765,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=09,0.089069,260999,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=10,0.066290,241199,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=11,0.075850,241557,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=12,0.095002,245595,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=13,0.112685,251967,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=14,0.098883,266233,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=15,0.081142,278474,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=16,0.071316,289695,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=17,0.082886,320959,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=18,0.065160,322424,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=19,0.062566,305454,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=20,0.077616,276426,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=21,0.090719,282167,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=22,0.142224,296828,
+M1_late_rate_10,borough x hour_of_day,borough=Brooklyn|hour=23,0.149147,268930,
+M1_late_rate_10,borough x hour_of_day,borough=EWR|hour=17,0.000000,1,
+M1_late_rate_10,borough x hour_of_day,borough=EWR|hour=22,1.000000,1,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=00,0.082281,276639,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=01,0.071001,205433,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=02,0.070052,148348,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=03,0.095270,110234,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=04,0.148702,92870,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=05,0.088223,100427,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=06,0.052003,157644,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=07,0.048065,240612,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=08,0.074734,327042,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=09,0.044817,315885,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=10,0.034246,298254,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=11,0.050469,313639,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=12,0.066189,323209,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=13,0.075579,332329,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=14,0.075151,336828,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=15,0.071997,345460,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=16,0.082414,375738,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=17,0.099335,411637,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=18,0.068428,437353,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=19,0.044618,434804,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=20,0.052319,433727,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=21,0.069078,444728,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=22,0.088765,422125,
+M1_late_rate_10,borough x hour_of_day,borough=Manhattan|hour=23,0.089885,365443,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=00,0.263179,162889,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=01,0.179389,107214,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=02,0.171053,77356,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=03,0.199110,70579,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=04,0.202277,82036,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=05,0.121497,110455,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=06,0.094914,152212,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=07,0.090309,205916,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=08,0.093390,245787,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=09,0.065151,229129,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=10,0.068623,216181,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=11,0.075980,212280,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=12,0.089320,211555,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=13,0.093249,224431,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=14,0.100637,244691,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=15,0.095585,249716,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=16,0.094917,253896,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=17,0.095183,261633,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=18,0.091973,256248,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=19,0.104329,239626,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=20,0.139673,222685,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=21,0.172634,222465,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=22,0.217942,222876,
+M1_late_rate_10,borough x hour_of_day,borough=Queens|hour=23,0.258810,208578,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=00,0.299379,7893,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=01,0.309554,5537,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=02,0.346889,3713,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=03,0.369888,3301,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=04,0.378197,4183,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=05,0.262290,6367,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=06,0.205151,11260,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=07,0.173109,16660,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=08,0.149546,20161,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=09,0.107284,18232,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=10,0.108407,16438,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=11,0.126645,16945,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=12,0.126782,16903,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=13,0.143235,18159,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=14,0.148302,20411,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=15,0.135362,21003,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=16,0.129430,20683,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=17,0.130991,20490,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=18,0.117790,17735,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=19,0.129891,15513,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=20,0.175139,14006,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=21,0.215304,13604,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=22,0.287755,13230,
+M1_late_rate_10,borough x hour_of_day,borough=Staten Island|hour=23,0.300477,11312,
+M1_late_rate_10,company x wav_request,company=HV0003|wav_request=false,0.112975,14904334,
+M1_late_rate_10,company x wav_request,company=HV0003|wav_request=true,0.274377,41228,
+M1_late_rate_10,company x wav_request,company=HV0005|wav_request=false,0.064337,5598842,
+M1_late_rate_10,company x wav_request,company=HV0005|wav_request=true,0.347312,9729,
+M1_late_rate_10,month,,0.100161,20554133,
+M1_late_rate_10,month,variant=pre-arranged kept as measured,0.099237,20920873,sensitivity: R12 exclusion undone
+M1_late_rate_10,month,variant=whole-minute requests dropped,0.099935,20199035,sensitivity: R14 rows also excluded
+M1_late_rate_15,month,,0.026949,20554133,
+M1_late_rate_8,month,,0.175292,20554133,
+M2_p90_wait_minutes,month,,10.016667,20554133,
+M3_dwell_coverage,company,company=HV0003,0.933960,15215053,share of clean rows with on_scene < pickup
+M3_dwell_coverage,company,company=HV0005,0.998566,5705820,share of clean rows with on_scene < pickup
+M3_median_dwell_minutes,company,company=HV0003,0.766667,14210255,
+M3_median_dwell_minutes,company,company=HV0005,0.766667,5697636,
+M4_late_rate_dry,borough,threshold_mm=0.5|borough=Bronx,0.127254,2377991,
+M4_late_rate_dry,borough,threshold_mm=0.5|borough=Brooklyn,0.100451,4696272,
+M4_late_rate_dry,borough,threshold_mm=0.5|borough=EWR,0.500000,2,
+M4_late_rate_dry,borough,threshold_mm=0.5|borough=Manhattan,0.069131,6181739,
+M4_late_rate_dry,borough,threshold_mm=0.5|borough=Queens,0.120983,4012841,
+M4_late_rate_dry,borough,threshold_mm=0.5|borough=Staten Island,0.168695,284833,
+M4_late_rate_dry,borough,threshold_mm=2.5|borough=Bronx,0.126737,2649583,
+M4_late_rate_dry,borough,threshold_mm=2.5|borough=Brooklyn,0.101052,5233382,
+M4_late_rate_dry,borough,threshold_mm=2.5|borough=EWR,0.500000,2,
+M4_late_rate_dry,borough,threshold_mm=2.5|borough=Manhattan,0.069669,6886968,
+M4_late_rate_dry,borough,threshold_mm=2.5|borough=Queens,0.122537,4472909,
+M4_late_rate_dry,borough,threshold_mm=2.5|borough=Staten Island,0.168743,318467,
+M4_late_rate_dry,month,threshold_mm=0.5,0.098868,17554717,
+M4_late_rate_dry,month,threshold_mm=2.5,0.099512,19562482,
+M4_late_rate_rainy,borough,threshold_mm=0.5|borough=Bronx,0.125655,397741,
+M4_late_rate_rainy,borough,threshold_mm=0.5|borough=Brooklyn,0.113023,805542,
+M4_late_rate_rainy,borough,threshold_mm=0.5|borough=EWR,,0,
+M4_late_rate_rainy,borough,threshold_mm=0.5|borough=Manhattan,0.074429,1068045,
+M4_late_rate_rainy,borough,threshold_mm=0.5|borough=Queens,0.138115,676900,
+M4_late_rate_rainy,borough,threshold_mm=0.5|borough=Staten Island,0.174532,48862,
+M4_late_rate_rainy,borough,threshold_mm=2.5|borough=Bronx,0.133081,126149,
+M4_late_rate_rainy,borough,threshold_mm=2.5|borough=Brooklyn,0.126453,268432,
+M4_late_rate_rainy,borough,threshold_mm=2.5|borough=EWR,,0,
+M4_late_rate_rainy,borough,threshold_mm=2.5|borough=Manhattan,0.074503,362816,
+M4_late_rate_rainy,borough,threshold_mm=2.5|borough=Queens,0.142410,216832,
+M4_late_rate_rainy,borough,threshold_mm=2.5|borough=Staten Island,0.186433,15228,
+M4_late_rate_rainy,month,threshold_mm=0.5,0.107632,2997272,
+M4_late_rate_rainy,month,threshold_mm=2.5,0.112681,989507,
+M4_rain_minus_dry_late_rate,borough,threshold_mm=0.5|borough=Bronx,-0.001599,2775732,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=0.5|borough=Brooklyn,0.012573,5501814,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=0.5|borough=EWR,,2,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=0.5|borough=Manhattan,0.005299,7249784,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=0.5|borough=Queens,0.017132,4689741,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=0.5|borough=Staten Island,0.005837,333695,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=2.5|borough=Bronx,0.006344,2775732,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=2.5|borough=Brooklyn,0.025401,5501814,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=2.5|borough=EWR,,2,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=2.5|borough=Manhattan,0.004834,7249784,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=2.5|borough=Queens,0.019873,4689741,raw difference
+M4_rain_minus_dry_late_rate,borough,threshold_mm=2.5|borough=Staten Island,0.017690,333695,raw difference
+M4_rain_minus_dry_late_rate,month,threshold_mm=0.5,0.008764,20551989,raw difference
+M4_rain_minus_dry_late_rate,month,threshold_mm=2.5,0.013169,20551989,raw difference
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=0.5|borough=Bronx,-0.000447,397741,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=0.5|borough=Brooklyn,0.019831,805542,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=0.5|borough=Manhattan,0.001977,1068045,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=0.5|borough=Queens,0.019741,676900,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=0.5|borough=Staten Island,0.016208,48862,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=2.5|borough=Bronx,0.008378,126149,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=2.5|borough=Brooklyn,0.031814,268432,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=2.5|borough=Manhattan,0.005251,362816,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=2.5|borough=Queens,0.018344,216832,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,borough,threshold_mm=2.5|borough=Staten Island,0.023353,15228,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,month,threshold_mm=0.5,0.010820,2997272,"within hour of day, weighted by rainy trips"
+M4_rain_minus_dry_late_rate_hour_adjusted,month,threshold_mm=2.5,0.015420,989507,"within hour of day, weighted by rainy trips"
+M4_wet_hours,month,threshold_mm=0.5,98.000000,744,hours of the month at or above threshold
+M4_wet_hours,month,threshold_mm=2.5,32.000000,744,hours of the month at or above threshold
+M5_dwell_coverage,month,,0.951563,20921249,rows with on_scene < pickup
+M5_rule_share,rule,rule_id=R01|severity=REJECT,0.000014,291,primary reject rule
+M5_rule_share,rule,rule_id=R03|severity=REJECT,0.000002,44,primary reject rule
+M5_rule_share,rule,rule_id=R06|severity=REJECT,0.000002,41,primary reject rule
+M5_trusted_row_share,month,,0.999982,20921249,not quarantined
+M5_wait_coverage,company x wav_request,company=HV0003|wav_request=false,0.982392,15171480,share of clean rows that enter wait metrics
+M5_wait_coverage,company x wav_request,company=HV0003|wav_request=true,0.946182,43573,share of clean rows that enter wait metrics
+M5_wait_coverage,company x wav_request,company=HV0005|wav_request=false,0.985253,5682644,share of clean rows that enter wait metrics
+M5_wait_coverage,company x wav_request,company=HV0005|wav_request=true,0.419788,23176,share of clean rows that enter wait metrics
+M5_wait_eligible_share,month,,0.982452,20921249,rows that enter the KPI
